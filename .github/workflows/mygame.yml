@@ -1,0 +1,24 @@
+# This is a workflow for HANGMAN
+
+name: MY-Hangman
+
+# Controls when the workflow will run
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  run-game:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git clone my repo
+        uses: actions/checkout@v1
+    
+      - name: list dir
+        run: ls -la
+        
+      - name: run game
+        run: python3 hangman.py
+
