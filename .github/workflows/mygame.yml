@@ -5,11 +5,12 @@ name: MY-Hangman
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "master" ]
+    branches:
+      - master
 
 jobs:
   run-game:
-    runs-on: windwos
+    runs-on: windows
 
     steps:
       - name: list dir
