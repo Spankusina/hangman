@@ -18,4 +18,7 @@ jobs:
     
       - name: list dir
         run: ls -la
+        
+      - name: check version
+        run: python3 --version
 
