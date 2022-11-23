@@ -10,15 +10,13 @@ on:
 
 jobs:
   run-game:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Git clone my repo
         uses: actions/checkout@v1
     
       - name: list dir
-        run: ls -la
+        run: dir
         
-      - name: run game
-        run: python3 hangman.py
 
