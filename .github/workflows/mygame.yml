@@ -1,0 +1,17 @@
+# This is a workflow for HANGMAN
+
+name: MY-Hangman
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  run-game:
+    runs-on: windwos
+
+    steps:
+      - name: list dir
+        run: dir
+
