@@ -19,6 +19,6 @@ jobs:
       - name: list dir
         run: ls -la
         
-      - name: check version
-        run: python3 --version
+      - name: run game
+        run: python3 hangman.py
 
